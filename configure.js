@@ -8,6 +8,8 @@ const TOOL_PREFKEY = PREF_PREFIX + "_CURRENT_TOOL";
 
 const BRUSH = 9;
 const PENCIL = 13;
+const CUTTER = 25;
+const SELECT = 22;
 
 function getCurrentTool() {
   return preferences.getInt(TOOL_PREFKEY, BRUSH);
@@ -26,7 +28,6 @@ function switchCurrentTool() {
 }
 
 function activateCurrentTool() {
-  print("Activating tool " + getCurrentTool())
   Tools.setCurrentTool(getCurrentTool())
 }
 
@@ -84,6 +85,56 @@ function configure(packageFolder, packageName) {
     responder: "ScriptManagerResponder",
     slot: "onTriggerScriptAction(QString)",
     itemParameter: activateDrawingToolAction.id,
+    categoryId: CATEGORY_NAME,
+    categoryText: CATEGORY_NAME,
+  });
+
+
+  var switchToCutterAction = {
+    id: ID_PREFIX + ".switchToCutter",
+    text: "Fully switch to cutter tool",
+    checkable: false,
+    isEnabled: true,
+    onTrigger: function () {
+      Tools.setCurrentTool(CUTTER)
+    },
+  };
+  ScriptManager.addAction(switchToCutterAction);
+
+  ScriptManager.addShortcut({
+    id: switchToCutterAction.id,
+    text: switchToCutterAction.text,
+    longDesc:
+      "Switch to cutter tool without any alt-key interference.",
+    order: "256",
+    responder: "ScriptManagerResponder",
+    slot: "onTriggerScriptAction(QString)",
+    itemParameter: switchToCutterAction.id,
+    categoryId: CATEGORY_NAME,
+    categoryText: CATEGORY_NAME,
+  });
+
+
+  var switchToSelectAction = {
+    id: ID_PREFIX + ".switchToSelect",
+    text: "Fully switch to select tool",
+    checkable: false,
+    isEnabled: true,
+    onTrigger: function () {
+      Tools.setCurrentTool(SELECT)
+    },
+  };
+  ScriptManager.addAction(switchToSelectAction);
+
+  ScriptManager.addShortcut({
+    id: switchToSelectAction.id,
+    text: switchToSelectAction.text,
+    longDesc:
+      "Switch to select tool without any alt-key interference.",
+    order: "256",
+    responder: "ScriptManagerResponder",
+    slot: "onTriggerScriptAction(QString)",
+    itemParameter: switchToSelectAction.id,
     categoryId: CATEGORY_NAME,
     categoryText: CATEGORY_NAME,
   });
