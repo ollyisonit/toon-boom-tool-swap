@@ -7,3 +7,4 @@ Adds a couple useful hotkeys to ToonBoom:
 The new hotkeys are in the hotkeys menu under `Dninosores TBToolSwap`.
 
 # Installation
+Create a folder called `packages` in your user scripts directory if it doesn't already exist, then copy the `TBToolSwap` folder into it.
