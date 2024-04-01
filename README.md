@@ -12,4 +12,4 @@ Currently Harmony is set up to have the `alt` key temporarily switch to the `cut
 
 
 ## Installation
-Create a folder called `packages` in your user scripts directory if it doesn't already exist, then copy the `TBToolSwap` folder into it. You can find the new hotkeys in the hotkeys menu under the section `ollyisonit-TBToolSwap`.
+First download the latest version [here](https://github.com/ollyisonit/toonboom-tool-swap/releases/latest). Create a folder called `packages` in your user scripts directory if it doesn't already exist, then copy the `TBToolSwap` folder into it. You can find the new hotkeys in the hotkeys menu under the section `ollyisonit-TBToolSwap`.
