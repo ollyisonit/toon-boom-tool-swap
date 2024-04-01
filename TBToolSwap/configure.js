@@ -1,8 +1,8 @@
-const ID_PREFIX = "com.dninosores";
-const PREF_PREFIX = "DNINOSORES_TBTOOLSWAP";
+const ID_PREFIX = "com.ollyisonit";
+const PREF_PREFIX = "OLLYISONIT_TBTOOLSWAP";
 
 //const CATEGORY_ID = ID_PREFIX + ".tbtoolswap";
-const CATEGORY_NAME = "Dninosores TBToolSwap";
+const CATEGORY_NAME = "ollyisonit-TBToolSwap";
 
 const TOOL_PREFKEY = PREF_PREFIX + "_CURRENT_TOOL";
 
@@ -34,9 +34,9 @@ function activateCurrentTool() {
 function configure(packageFolder, packageName) {
   MessageLog.trace(
     "Package " +
-      packageName +
-      " configure was called in folder: " +
-      packageFolder
+    packageName +
+    " configure was called in folder: " +
+    packageFolder
   );
 
   var switchDrawingToolAction = {
