@@ -1,6 +1,6 @@
 # Toonboom Tool-Swap
 
-A plugin that adds new hotkeys to ToonBoom Harmony that allow it to work more similarly to other painting apps.
+A plugin that adds two groups of hotkeys to ToonBoom Harmony: one to easily swap between the `brush` and `pencil` tools, and one to activate the `cutter` and `select` tools without affecting the `alt` key's bindings.
 
 ## Features
 
