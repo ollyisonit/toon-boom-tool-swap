@@ -1,5 +1,7 @@
 # Toon Boom Tool-Swap
 
+![](icon.jpg)
+
 A plugin that adds two groups of hotkeys to Toon Boom Harmony: one to easily swap between the `brush` and `pencil` tools, and one to activate the `cutter` and `select` tools without affecting the `alt` key's bindings.
 
 ## Features
